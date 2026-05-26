@@ -1,0 +1,72 @@
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace
+!default.xcworkspace
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+*.moved
+*.xccheckout
+*.playground
+
+# Build
+build/
+Build/
+DerivedData/
+*.app
+*.ipa
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.podspec
+
+# Carthage
+Carthage/
+*.resolved
+
+# SwiftPM
+.build/
+.swiftpm/
+
+# Xcode User Specific
+xcuserdata/
+*.xcuserdatad
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# IDE
+.vscode/
+.idea/
+*.swiftpm
+*.playground
+
+# Temporary files
+*.tmp
+*.log
+.env
+.env.local
+
+# Firebase/Google Services
+GoogleService-Info.plist
+google-services.json
+
+# Secrets
+*.key
+*.p12
+*.mobileprovision
+*.cer
