@@ -12,6 +12,7 @@ public final class TestFramework {
     // Public method
     @_optimize(none)
     public func greet(name: String) -> String {
+        NSLog("[CYBER] 'greet' was called")
         let formatted = formatName(name)
         return "Hello, \(formatted)!"
     }
@@ -19,6 +20,7 @@ public final class TestFramework {
     // Private method
     @_optimize(none)
     private func formatName(_ name: String) -> String {
+        NSLog("[CYBER] 'formatName' was called")
         return name.uppercased()
     }
 }
