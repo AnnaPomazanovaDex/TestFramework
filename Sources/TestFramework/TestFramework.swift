@@ -16,6 +16,7 @@ public final class TestFramework {
     @available(iOS 14.0, *)
     public func publicMethod() {
         logger.logMessage("TestFramewor.publicMethod() called")
+        privateMethod()
     }
 
     @_optimize(none)
