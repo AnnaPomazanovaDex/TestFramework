@@ -5,22 +5,22 @@
 //
 import Foundation
 
+@available(iOS 14.0, *)
 public final class TestFramework {
 
-    public init() {}
+    private let logger = CyberLogger()
 
-    // Public method
+    public init() {}
+    
     @_optimize(none)
-    public func greet(name: String) -> String {
-        NSLog("[CYBER] 'greet' was called")
-        let formatted = formatName(name)
-        return "Hello, \(formatted)!"
+    @available(iOS 14.0, *)
+    public func publicMethod() {
+        logger.logMessage("TestFramewor.publicMethod() called")
     }
 
-    // Private method
     @_optimize(none)
-    private func formatName(_ name: String) -> String {
-        NSLog("[CYBER] 'formatName' was called")
-        return name.uppercased()
+    @available(iOS 14.0, *)
+    private func privateMethod() {
+        logger.logMessage("TestFramewor.privateMethod() called")
     }
 }
